@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatLayout"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:elevation="12dp"
+            android:shape="ring"
+            app:cardCornerRadius="22dp"
+            android:layout_margin="5dp"
+            android:innerRadius="0dp"
+            android:thicknessRatio="1.9">
+
+            <ImageView
+                android:id="@+id/imageGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_person_black_24dp"
+                />
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:maxLength="21"
+            android:id="@+id/chatUsersText"
+            />
+
+        <!-- ADDED SPACER VIEW -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <!-- /ADDED SPACER VIEW -->
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/removeCardView"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:elevation="0dp"
+            android:shape="ring"
+            app:cardCornerRadius="18dp"
+            android:innerRadius="0dp"
+            android:thicknessRatio="1.9"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            >
+
+            <ImageButton
+                android:id="@+id/removeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_remove_circle_black_24dp"
+                android:backgroundTint="?attr/colorPrimary"
+                />
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

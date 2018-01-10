@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">LangChat</string>
+    <string name="action_settings">Account settings</string>
+
+    <!--Login Fragment strings-->
+    <string name="firebaseLoginText">Log In or </string>
+    <string name="firebaseCreateAccountText"><u>Create Account</u></string>
+    <string name="loginButtonText">Login</string>
+    <string name="signUpButtonText">Create Account</string>
+    <string name="providersLoginText">Easy 1-Click Login</string>
+    <string name="userEmailHint">Email address</string>
+    <string name="passwordHint">Password</string>
+    <string name="userLoginFailedMessage">Could not log you in. Please try again</string>
+
+    <!--Signup Fragment Strings-->
+    <string name="createAccountText">Create Account</string>
+    <string name="userCreationFailedMessage">Could not create account. Please try again</string>
+    <string name="confirmPasswordHint">Confirm Password</string>
+    <string name="displayNameHint">Display name</string>
+
+    <!-- Chat list Fragment Strings -->
+    <string name="chatButtonText">Start chat</string>
+
+    <!--menu items-->
+    <string name="addUserTitle">Add user</string>
+    <string name="newChatTitle">New chat</string>
+
+    <!--Search friends Fragment-->
+    <string name="searchBarHint">Enter user display name</string>
+
+    <!--Chat Fragment-->
+    <string name="messageHint">Say something</string>
+
+    <!--Settings Fragment-->
+    <string name="statusHint">Status</string>
+    <string name="saveButtonText">Save</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

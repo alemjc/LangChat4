@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/app/.gitignore
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+app-release.apk
+build.gradle
+google-services.json
+libs/
+proguard-rules.pro

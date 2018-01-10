@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.chat.langchat.app.SettingsFragment"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/picGroup"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:elevation="12dp"
+        android:shape="ring"
+        app:cardCornerRadius="22dp"
+        android:innerRadius="0dp"
+        android:thicknessRatio="1.9">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/accountPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_person_black_24dp"
+                />
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:elevation="12dp"-->
+                <!--android:shape="ring"-->
+                <!--app:cardCornerRadius="10dp"-->
+                <!--android:innerRadius="0dp"-->
+                <!--android:thicknessRatio="1.9"-->
+                <!--android:layout_alignBottom="@id/accountPhoto"-->
+                <!--android:layout_alignEnd="@id/accountPhoto"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/userImage"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@drawable/ic_insert_photo_black_24dp"-->
+                    <!--/>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/displayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="@string/displayNameHint"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="@string/statusHint"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- ADDED SPACER VIEW -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <!-- /ADDED SPACER VIEW -->
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="?attr/colorPrimary"
+        android:hint="@string/saveButtonText"/>
+
+</LinearLayout>

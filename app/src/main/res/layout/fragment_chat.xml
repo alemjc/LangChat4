@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.chat.langchat.app.ChatFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:id="@+id/textTools"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:layout_marginTop="10dp"
+            android:maxLength="2000"
+            android:maxLines="4"
+            android:background="@android:color/transparent"
+            android:inputType="textCapSentences|textLongMessage|textMultiLine"
+            android:hint="@string/messageHint"
+            android:id="@+id/message"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_send_white_24dp"
+            android:background="?attr/colorPrimary"
+            android:padding="10dp"
+            android:id="@+id/sendButton"
+            />
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="0.2"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:fabSize="normal"-->
+        <!--android:src="@drawable/ic_send_black_24dp"-->
+        <!--android:id="@+id/sendButton"-->
+        <!--/>-->
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/textTools"
+        android:id="@+id/texts"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="141dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.chat.langchat.app.NewChatFragment">
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:hint="@string/searchBarHint"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:elevation="2dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userList"
+        android:layout_below="@id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userList"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:elevation="2dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/selectUserList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/newChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chatButtonText"/>
+    </LinearLayout>
+
+</RelativeLayout>
